@@ -14,6 +14,9 @@ export default function App() {
       <View>
       <Text>14 tasks today</Text>
       </View>
+      <View>
+        <TextInput placeholder="Search" style={styles.searchBar}/>
+      </View>
 
       <View style={styles.categories}>
       <Text style={styles.headText}>Categories</Text>
