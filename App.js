@@ -44,8 +44,18 @@ export default function App() {
       </View>
       </View>
 
-      <View>
+      <View style={styles.searchBarContainer}>
+        <View style={styles.searchBarDiv}>
+        <View style={styles.searchImageContainer}>
+        <Image source={require('./searchImage.png')} style={styles.searchImage}></Image>
+        </View>
+      
         <TextInput placeholder="Search" style={styles.searchBar}/>
+
+      </View>
+      <View style={styles.filterImageContainer}>
+      <Image source={require('./filterImage.png')} style={styles.filterImage}></Image>
+      </View>
       </View>
        
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -92,7 +102,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 50,
+    paddingTop: 52,
     paddingLeft: 20,
     paddingRight: 20,
     backgroundColor: '#F7F0E8',
@@ -122,7 +132,7 @@ const styles = StyleSheet.create({
     justifyContent: '',
   },
   profileContainer: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FBF9F7',
     borderRadius: 50,
     marginLeft: 134,
     height: 52,
@@ -134,13 +144,49 @@ const styles = StyleSheet.create({
     alignItems: 'right',
     height: 45,
   },
+  searchImageContainer: {
+    backgroundColor: '#FBF9F7',
+    borderRadius: 14,
+  },
+  searchBarContainer: {
+    flexDirection: 'row',
+    height: 48,
+    border: 1,
+    borderColor: '#F7F0E8',
+    borderRadius: 14,
+    marginTop: 30,
+  },
+  searchBarDiv: {
+    flexDirection: 'row',
+    backgroundColor: '#FBF9F7',
+    width: 280,
+    paddingLeft: 11,
+  },
   searchBar: {
     paddingLeft: 8,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FBF9F7',
     borderRadius: 5,
   },
+  searchImage: {
+    marginTop: 10,
+    width: 24,
+    height: 24,
+  },
+  filterImageContainer: {
+    height: 48,
+    width: 50,
+    borderRadius: 14,
+    backgroundColor: '#F0522F',
+    paddingTop: 9,
+    paddingLeft: 8,
+    marginLeft: 23,
+  },
+  filterImage: {
+    height: 25.5,
+    width: 28.33,
+  },
   categories: {
-    marginTop: 50,
+    marginTop: 30,
     alignItems: '',
     justifyContent: '',
   },
@@ -155,7 +201,7 @@ const styles = StyleSheet.create({
     height: 192,
     width: 186,
     marginRight: 24,
-    marginTop: 20,
+    marginTop: 12,
     borderRadius: 15,
     backgroundColor: '#FBF9F7',
   },
@@ -191,7 +237,7 @@ const styles = StyleSheet.create({
     height: 128,
     width: 354,
     borderRadius: 15,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FBF9F7',
     borderColor: '#E8D1BA',
     borderWidth: 1,
     marginTop: 10,
