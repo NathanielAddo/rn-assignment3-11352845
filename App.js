@@ -33,15 +33,17 @@ export default function App() {
     
       <View style={styles.container}>
     <View style={styles.headDiv} >
+
+      <View style={styles.headTextContainer}>
       <Text style={styles.headText}>Hello , Devs</Text>
+      <Text style={styles.headSubtitle}>14 tasks today</Text>
+      </View>
+
       <View style={styles.profileContainer}>
       <Image style={styles.profileImage} source={require('./profile.png')}></Image>
       </View>
       </View>
 
-      <View>
-      <Text style={styles.subtitle}>14 tasks today</Text>
-      </View>
       <View>
         <TextInput placeholder="Search" style={styles.searchBar}/>
       </View>
@@ -99,6 +101,7 @@ const styles = StyleSheet.create({
   },
   headDiv: {
     flexDirection: 'row',
+    width: 354,
   },
   headText: {
     flex: 4,
@@ -109,10 +112,20 @@ const styles = StyleSheet.create({
     justifyContent: '',
     lineHeight: 38.4,
   },
+  headTextContainer: {
+    flexDirection: 'column',
+  },
+  headSubtitle: {
+    fontSize: 12,
+    fontWeight: 500,
+    alignItems: '',
+    justifyContent: '',
+  },
   profileContainer: {
     backgroundColor: '#FFFFFF',
     borderRadius: 50,
-    height: 48,
+    marginLeft: 134,
+    height: 52,
     width: 48,
     padding: 1,
   },
@@ -180,6 +193,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: '#FFFFFF',
     borderColor: '#E8D1BA',
+    borderWidth: 1,
     marginTop: 10,
     marginBottom: 10,
     justifyContent: '',
