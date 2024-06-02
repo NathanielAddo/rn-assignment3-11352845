@@ -34,7 +34,9 @@ export default function App() {
       <View style={styles.container}>
     <View style={styles.headDiv} >
       <Text style={styles.headText}>Hello , Devs</Text>
+      <View style={styles.profileContainer}>
       <Image style={styles.profileImage} source={require('./profile.png')}></Image>
+      </View>
       </View>
 
       <View>
@@ -107,6 +109,13 @@ const styles = StyleSheet.create({
     justifyContent: '',
     lineHeight: 38.4,
   },
+  profileContainer: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 50,
+    height: 48,
+    width: 48,
+    padding: 1,
+  },
   profileImage: {
     width: 46,
     alignItems: 'right',
@@ -133,6 +142,7 @@ const styles = StyleSheet.create({
     height: 192,
     width: 186,
     marginRight: 24,
+    marginTop: 20,
     borderRadius: 15,
     backgroundColor: '#FBF9F7',
   },
