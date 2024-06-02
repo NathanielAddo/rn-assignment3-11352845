@@ -32,3 +32,4 @@ The `SectionList` component is similar to `FlatList` but supports section header
 ### Image
 The `Image` component is used to display images, including icons and user profile pictures.
 
+![Image](Screenshot_2-6-2024_23183_localhost.jpeg)
